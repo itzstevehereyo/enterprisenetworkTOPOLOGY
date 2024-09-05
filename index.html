@@ -1,1 +1,66 @@
-<a href="https://github.com/itzstevehereyo/enterprisenetworkTOPOLOGY/raw/main/ACL%20Implementation%20Challenge.pkt" download>Download File</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Your File</title>
+    
+    <!-- Style to center text and give it the desired appearance -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .morse-code {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <!-- JavaScript for auto-download -->
+    <script type="text/javascript">
+        window.onload = function() {
+            var link = document.getElementById("auto-download-link");
+            link.click();  // Triggers the download automatically
+        };
+    </script>
+</head>
+<body>
+    <div class="morse-code">··· - ···· - ··</div>
+    <h1>The file should start downloading now.</h1>
+    <h2>If the download has not started, click <a id="manual-download-link" href="https://raw.githubusercontent.com/your-username/your-repository/branch/path/to/file" download>here</a> to download manually.</h2>
+
+    <!-- Hidden link for automatic download -->
+    <a id="auto-download-link" href="https://raw.githubusercontent.com/your-username/your-repository/branch/path/to/file" download style="display:none;"></a>
+
+    <footer>© 2023-2024 Steve A. Daniel</footer>
+</body>
+</html>
